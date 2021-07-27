@@ -70,5 +70,17 @@
     "material": [ "steel", "plastic" ],
     "volume": "7250 ml",
     "copy-from": "v_scoop_item"
+  },
+  {
+    "type": "GENERIC",
+    "id": "v_spreader_item",
+    "symbol": "=",
+    "name": { "str": "fertilizer spreader" },
+    "color": "dark_gray",
+    "description": "In development fertilizer spreader",
+    "weight": "32666 g",
+    "material": [ "steel", "plastic" ],
+    "volume": "7250 ml",
+    "copy-from": "v_scoop_item"
   }
 ]

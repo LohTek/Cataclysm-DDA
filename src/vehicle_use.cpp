@@ -314,6 +314,8 @@ void vehicle::set_electronics_menu_options( std::vector<uilist_entry> &options,
                 keybind( "TOGGLE_PLOW" ), "ROCKWHEEL" );
     add_toggle( pgettext( "electronics menu option", "roadheader" ),
                 keybind( "TOGGLE_PLOW" ), "ROADHEAD" );
+	add_toggle( pgettext( "electronics menu option", "spreader" ),
+                keybind( "TOGGLE_SPREADER" ), "SPREADER" );
     add_toggle( pgettext( "electronics menu option", "scoop" ),
                 keybind( "TOGGLE_SCOOP" ), "SCOOP" );
     add_toggle( pgettext( "electronics menu option", "water purifier" ),
@@ -1428,6 +1430,16 @@ void vehicle::operate_planter()
         }
     }
 }
+
+void vehicle::operate_spreader()
+{
+    map &here = get_map();
+    for( const vpart_reference &vp : get_enabled_parts( "SPREADER" ) ) {
+        const size_t spreader_id = vp.part_index();
+        const tripoint loc = vp.pos();
+    }
+}
+
 
 void vehicle::operate_scoop()
 {

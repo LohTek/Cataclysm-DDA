@@ -2975,6 +2975,31 @@
   },
   {
     "type": "vehicle_part",
+    "id": "spreader",
+    "name": { "str": "Fertilizer Spreader" },
+    "symbol": "=",
+    "categories": [ "utility" ],
+    "color": "blue",
+    "broken_symbol": "*",
+    "broken_color": "light_blue",
+    "damage_modifier": 40,
+    "durability": 200,
+    "description": "In Progress fertilizer spreading implement",
+    "item": "v_spreader_item",
+    "location": "structure",
+    "size": 50,
+    "power": -700,
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 4 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_weld_removal", 1 ] ] },
+      "repair": { "skills": [ [ "mechanics", 5 ] ], "time": "60 m", "using": [ [ "welding_standard", 5 ] ] }
+    },
+    "flags": [ "SPREADER", "PROTRUSION", "CARGO", "EXTRA_DRAG" ],
+    "breaks_into": [ { "item": "plastic_chunk", "count": [ 1, 2 ] }, { "item": "scrap", "count": [ 1, 2 ] } ],
+    "damage_reduction": { "all": 16 }
+  },
+  {
+    "type": "vehicle_part",
     "id": "cargo_lock",
     "name": { "str": "cargo lock" },
     "symbol": "+",
